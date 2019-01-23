@@ -12,16 +12,23 @@ package Clases;
 public class Persoal {
     private int telefono;
     private String correo;
-    private String alum;
+    
     
     public Persoal(int telefono, String correo){
         this.correo=correo;
         this.telefono=telefono;
         
     }
+
+    public Persoal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public String getCorreo(){
         return correo;
+    }
+    public void setCorreo(String correo){
+            
     }
     
 }

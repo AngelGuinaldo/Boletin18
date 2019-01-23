@@ -13,18 +13,22 @@ import Clases.Persoal;
  */
 public class Academica {
 
-    private int numReferencia = 2018;
+    private static int numReferencia = 2018;
     private String nome;
     private int nota;
-    private Persoal alum;
-    
-    public Academica(String nome,int numReferencia,int nota,Persoal alum){
-        this.nota=nota;
-        this.nome=nome;
-        this.alum=alum;
-        this.numReferencia=numReferencia;
+    private Persoal per = new Persoal();
+
+    public Academica() {
+        numReferencia++;
     }
-    
+
+    public Academica(String nome, int numReferencia, int nota, Persoal per) {
+        this.nota = nota;
+        this.nome = nome;
+        this.per = per;
+
+    }
+
     public String getNome() {
         return nome;
     }
@@ -33,28 +37,13 @@ public class Academica {
         this.nome = nome;
     }
 
-    public int getNumReferencia() {
-        return numReferencia;
-    }
-
-    public void setNumReferencia(int numReferencia) {
-        this.numReferencia = numReferencia;
-
-    }
-    
-    public int getNota(){
+    public int getNota() {
         return nota;
     }
-    
-    public void setNota(int nota){
-        this.nota=nota;
-        
-    }
-    
-   
-    public String toString (){
-        
-        
+
+    public void setNota(int nota) {
+        this.nota = nota;
+
     }
 
 }
